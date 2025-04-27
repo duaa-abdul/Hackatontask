@@ -3,11 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <title>Login Form</title>
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div class="login-container">
+
+
+  <div class="flex">
+    <aside id="sidebar">
+      <div class="logo">
+        <div class="icon"><span class="material-icons">assignment</span></div>
+        <h1>Task Tracker</h1>
+      </div>
+      <nav>
+        <ul>
+         <li><a href="Signup.html">SignUp</a></li>
+         <li><a href="login.html">Login</a></li>
+         <li><a href="../index.html">Add Task</a></li>
+         <div id="notifications"></div>
+        </ul>
+      </nav>
+      <div class="footer">© 2025 Dua Rauf</div>
+    </aside>
+
+
+     <main id="main">
+      <div class="login-container">
         <form class="login-form">
           <h2>Welcome Back</h2>
           <input type="email" id="email" placeholder="Email Address" required>
@@ -16,5 +38,8 @@
           <p>Don't have an account? <a href="./Signup.html">Sign Up</a></p>
         </form>
       </div>
+    </main> 
+  </div>
+  
 </body>
 </html>

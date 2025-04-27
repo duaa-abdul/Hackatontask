@@ -179,5 +179,40 @@ nav ul li a:hover{
 .icon-btn:hover {
   color: #6366f1;
 }
+#update button{
+  height: 40px;
+  width: 100px;
+border: none;
+background-color:#6366f1; 
+}
 
-  
+
+button {
+  padding: 8px 14px;
+  margin: 4px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+button.update-btn {
+  background-color:#6366f1; 
+  color: white;
+}
+
+button.update-btn:hover {
+  background-color: #4a5568;
+}
+
+
+button.delete-btn {
+  background-color: #6366f1; 
+  color: white;
+}
+
+button.delete-btn:hover {
+  background-color: #4a5568;
+}

@@ -3,11 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <title>Sign up form</title>
     <link rel="stylesheet" href="signup.css">
 </head>
 <body>
-    <div class="signup-container">
+
+  <div class="flex">
+    <aside id="sidebar">
+      <div class="logo">
+        <div class="icon"><span class="material-icons">assignment</span></div>
+        <h1>Task Tracker</h1>
+      </div>
+      <nav>
+        <ul>
+         <li><a href="./form/Signup.html">SignUp</a></li>
+         <li><a href="login.html">Login</a></li>
+         <li><a href="../index.html">Add Task</a></li>
+         <div id="notifications"></div>
+        </ul>
+      </nav>
+      <div class="footer">© 2025 Dua Rauf</div>
+    </aside>
+
+   <div class="signup-container">
         <form class="signup-form" id="signup-form">
           <h2>Create Account</h2>
           <input type="text" id="name" placeholder="Full Name" required>
@@ -18,6 +37,11 @@
         </form>
       </div>
 
+
+    </main> 
+  </div>
+  
+ 
 
       <script type="module" src="signup.js"></script>
 </body>

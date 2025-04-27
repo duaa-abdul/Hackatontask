@@ -1,5 +1,5 @@
 import { auth, createUserWithEmailAndPassword } from '../firebase.config.js';
-import { updateProfile } from '../firebase.config.js'; // ✅ updateProfile bhi import karo
+import { updateProfile } from '../firebase.config.js'; 
 
 const SignUp = async (e) => {
   e.preventDefault();
@@ -10,18 +10,14 @@ const SignUp = async (e) => {
   
   try {
     const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-    
-    // ✅ User ka name set karne ke liye
     await updateProfile(userCredential.user, {
       displayName: name,
     });
 
     console.log("User Created:", userCredential.user);
     alert("Sign up successful!");
-    window.location.replace("./index.html");
   } catch (error) {
     console.error("Signup Error:", error.message);
-    alert("Error: " + error.message);
   }
 };
 
