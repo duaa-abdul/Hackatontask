@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .signup-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+  }
+  
+  .signup-form {
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signup-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .signup-form input {
+    width: 100%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .signup-form button {
+    width: 100%;
+    background-color: #5a67d8;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-form button:hover {
+    background-color: #434190;
+  }
+  
+  .signup-form p {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .signup-form a {
+    color: #5a67d8;
+    text-decoration: none;
+  }
+  
+  .signup-form a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Media Query */
+  @media (max-width: 500px) {
+    .signup-form {
+      padding: 20px 15px;
+    }
+  
+    .signup-form h2 {
+      font-size: 22px;
+    }
+  
+    .signup-form button {
+      font-size: 16px;
+    }
+  }
+  

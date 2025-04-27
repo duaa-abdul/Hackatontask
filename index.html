@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Tracker</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="flex">
+    <aside id="sidebar">
+      <div class="logo">
+        <div class="icon"><span class="material-icons">assignment</span></div>
+        <h1>Task Tracker</h1>
+      </div>
+      <nav>
+        <ul>
+         <li><a href="./form/Signup.html">SignUp</a></li>
+         <li><a href="./form/login.html">Login</a></li>
+         <li><a href="index.html">Add Task</a></li>
+         <div id="notifications"></div>
+        </ul>
+      </nav>
+      <div class="footer">© 2025 Dua Rauf</div>
+    </aside>
+    <main id="main">
+      <div class="grid-3">
+        <div class="card"><span>Today</span><h2 id="today-count">0 Tasks</h2></div>
+        <div class="card"><span>Pending</span><h2 id="pending-count">0</h2></div>
+        <div class="card"><span>Completed</span><h2 id="completed-count">0</h2></div>
+      </div>
+      <div id="add-task" class="flex">
+        <input type="text" placeholder="Task Title" id="add_task" />
+        <button id="add-btn">Add</button>
+      </div>
+      <div class="table-container">
+        <table id="tasks-table">
+          <thead>
+            <tr><th>#</th><th>Task</th><th>Status</th>Complete</tr>
+          </thead>
+          <tbody id="tasks-body"></tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
